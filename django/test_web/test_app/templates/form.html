@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+</head>
+<body style="background-color: rgb(165, 120, 206);">
+
+  <h2>Contact Form</h2>
+
+  <form action="" method="POST"> <!-- action can be set to Django URL -->
+    {% csrf_token %}
+
+    <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+
+    <label for="contact">Contact Number:</label><br>
+    <input type="tel" id="contact" name="contact" placeholder="Enter your contact number"><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>

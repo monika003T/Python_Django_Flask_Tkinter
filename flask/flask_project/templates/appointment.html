@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Appointment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background: white;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #4cf10b;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(167, 128, 203);">
+    <div class="container">
+        <h2>Book an Appointment</h2>
+        <form method="POST">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="date" name="date" required>
+            <input type="time" name="time" required>
+            <textarea name="purpose" placeholder="Purpose" required></textarea>
+            <button type="submit">Book Appointment</button>
+        </form>
+    </div>
+</body>
+</html>
